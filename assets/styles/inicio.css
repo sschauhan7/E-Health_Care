@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.row {
+    height: 90vh;
+    width: 80%;
+    text-align: center;
+    align-items: center;
+    padding: 2em;
+    margin-top: 2em;
+}
+
+.mini-row {
+    display: block;
+    width: 100%;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+a[href="#info"] {
+    margin: 5em;
+}

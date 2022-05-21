@@ -1,0 +1,20 @@
+
+/* ===== ESTILOS DE MIS DATOS ===== */
+/* Nota: todos los estilos las subcategorias tendran el siguiente formato: .misdatos-x o #misdatos-x */
+#misdatos-contenido {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: scroll;
+    flex-wrap: wrap;
+
+    padding-top: 1em;
+}
+
+#misdatos-contenido::-webkit-scrollbar {
+display: none;
+}
+
+.misdatos-col, .misdatos-h5, .misdatos-submit {
+    margin-top: 1em;
+}

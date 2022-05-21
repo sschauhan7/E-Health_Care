@@ -1,0 +1,78 @@
+#informes-contenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#container {
+    width: 95%;
+    height: 85%;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+.elemento-lista {
+    width: 80%;
+    list-style-type: none;
+}
+
+.elemento-lista:first-child {
+margin-top: 16px;
+}
+
+#lista {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: 100%;
+    
+}
+
+/*Estilos de la botonera*/
+#paginas {
+    height: 85%;   
+}
+
+#botonera {
+    height: 15%;
+    position: relative;
+    bottom: 0;
+}
+
+.paginationjs-prev, .paginationjs-next, .paginationjs-page {
+    list-style-type: none;
+    float: left;
+    height: 2em;
+}
+
+.paginationjs-prev, .paginationjs-next {
+    width: 2em;
+    height: 2em;
+    border: 1px solid #aaa;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+.paginationjs-next {
+    margin-right: 1em;
+    border-radius: 0 0.2em 0.2em 0;
+    border-left:none;
+}
+.paginationjs-prev {
+    border-radius:  0.2em 0 0 0.2em;
+    
+}
+
+.paginationjs {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<title>Disease Prediction</title>
+</head>
+
+<style>
+h1{
+font-size:50px;
+text-align:center;
+padding-top:30px;
+color:#000066;
+}
+img 
+{ float: left;
+width: 77px;
+}
+li{
+font-size:24px;
+}
+h3{
+font-size:24px;
+letter-spacing:4px;}
+body {margin:0;
+padding:0;
+      font: 400 15px/1.8 Lato, sans-serif;
+      color: #777;
+width:100%;
+height:100vh;
+background-image:url(../pic/1.jpg);
+background-size:cover;
+}
+</style>
+<body class="container display-4">
+<script>
+
+var name1 = prompt('Are you experience any of these symptoms?\na)Fever\nb)Chronic cough\nc)Headache');
+//-------------If chose a-----------------
+if (name1=='ab'){
+alert('You have infection cold....');
+}
+if(name1=='a'){
+var name1a=prompt('Are you experience any of these symptoms?\n-Runny or stuffy nose\n-Sore throatnCough\n-Congestion\n-Slight body aches or a mild headache\n-Sneezing\n-Low-grade\n-fever\n-Generally feeling unwell (malaise)\n(a)Yes\n(b)No\n(c)Some options are different');
+if(name1a=='a'){
+alert('You have common Cold....');
+}
+else if (name1a=='b'){
+var name1b=prompt('Are you experience any of these symptoms?\n- Symptoms of blood clots in legs (deep vein thrombosis (DVT) are pain,\n- Redness, and swelling\n-Symptoms of an arterial blood clot in a limb (leg or arm) include pain, pale color, and coolness to the touch.\n(a)Yes\n(b)No ');
+if(name1b=='a'){
+alert('You have Blood clots');
+	}
+}
+  else if (name1a=='c'){
+var name1b=prompt('Are you experience any of these symptoms?\n- abdominal cramps.\n-diarrhea.\n-vomiting.\n-loss of appetite.\n-mild fever.\n-weakness.\n-nausea.\n-headaches.\n(a)Yes\n(b)No ');
+if(name1b=='a'){
+alert('You have Food poisoning');
+	}
+else if(name1b=='b'){
+alert('You have simple cold...');
+	}	
+ }
+  
+    
+}
+//-------------If chose b-----------------
+if(name1=='b'){
+var name2 = prompt('Are you experience any of these symptoms?\n-Shortness of breath\n-Chest tightness\n-Trouble sleeping caused by shortness of breath, coughing or wheezing\n-A whistling or wheezing sound when exhaling\n-Coughing or wheezing attacks that are worsened by a respiratory virus, such as a cold or the flu\n(a)Yes\n(b)No ');
+if(name2=='a'){
+    alert('You have Asthma!!!!\nContact with our  specialist...');
+		}
+		else if(name2=='b'){
+		var name5= prompt('Are you experience any of these symptoms?\n-Constant Coughing & Throat Clearing.\n-Phlegm.\n-Upset Stomach, Stomach Ache or Pain.\n-Itchy Throat, Sore\n-Throat or Tickling in the Throat.\n-Breathing Problems & Difficulties or Shortness of Breath.\n-Swollen Glands.\n-Blood in Mucus.\nChest Pain.\n(a)Yes\n(b)No');
+		if(name5=='a'){
+		alert('You have Post nasal drip......');
+			}
+				else if(name5=='b'){
+	alert('You are ok...');
+ 			}
+		}
+		
+	}
+
+//-------------If chose c-----------------
+if(name1=='c') 
+{
+var name3 = prompt('Are you experience any of these symptons?\n-Increased thirst\n-increased hunger\n-Dry mouth\n-Frequent urination or urine infection\n-unexplain weight loss\n-fatigue(weak/tired feeling)\n(a)Yes\n(b)No');
+if(name3=='a'){
+    alert('You have Diabetes!!!!\nContact with our Diabetes specialist...');
+	}
+	else if(name3=='b')
+	{var name4 = prompt('Are you experience any of these symptoms?\n-Vision problems\n-Chest pain\n-Blood urine\n-Difficulty breathing\n-Irregular heartbeat\n(a)Yes\n(b)No');
+if(name4=='a'){
+    alert('you have Blood Pressure...');
+	}
+	else if(name4=='b'){
+	alert('You are ok...');
+ 		}
+	}
+	
+}
+
+///------- finish c----------------
+
+</script>
+
+
+<table class="table table-hover table-dark">
+  <thead>
+    <tr>
+      
+      <th scope="col" class="text-center text-warning">Specialist Name</th>
+
+    </tr>
+  </thead>
+
+<tr><th class="text-center"><a href=../Display_doctor_list_on_users_home_page/medicine.php>Medicine</a></th></tr>
+<tr><th class="text-center"><a href=../Display_doctor_list_on_users_home_page/bone.php>Orthopedic</a></th></tr>
+<tr><th class="text-center"><a href=../Display_doctor_list_on_users_home_page/dentist.php>Dentist</a></th></tr>
+<tr><th class="text-center"><a href=../Display_doctor_list_on_users_home_page/cardiac_electrophysiologist.php>Cardiac electrophysiologist</a></th></tr>
+<tr><th class="text-center"><a href=../Display_doctor_list_on_users_home_page/cardiologist.php>Cardiologist</a></th></tr>
+<tr><th class="text-center"><a href=../Display_doctor_list_on_users_home_page/surgeon.php>Surgeon</a></th></tr>
+<tr><th class="text-center"><a href=../Display_doctor_list_on_users_home_page/gynecologist.php>Gynecologist</a></th></tr>
+<br><br>
+<h2><div class="container ">
+<ul class="pager font-weight-bold text-monospace">
+  <li class="previous "><a href="../Users/view_user_home_page.php">Previous Page</a></li>
+  <li class="next"><a href="../doctor_list.php">Next Page</a></li>
+</ul></div></h2></table>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>

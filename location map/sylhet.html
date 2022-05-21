@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Location of Sylhet Hospital</title>
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html,	p{background-position:left;
+	font-family:"Times New Roman", Times, serif;
+	font-size:20px;
+	color:#FFFFFF;
+	
+	text-align:center;
+	}
+	h2{font-style:italic;
+	font-size:36px;
+	color:#FFFF99;
+	text-align:center;
+	}
+    </style>
+        <style>
+h1{
+font-size:50px;
+color:#FFFFFF;
+padding-top:60px;
+}
+img 
+{ float: left;
+width: 77px;
+}
+
+body {margin:0;
+padding:0;
+font-family:"Bahnschrift Light", "Bernard MT Condensed", "Berlin Sans FB Demi", "Bell MT";
+width:100%;
+height:100vh;
+background-color:#333333;
+}
+</style>
+  </head>
+  <body>
+    <h1 class=" text-capitalize text-center active "id="top" style="background-color:#666666">Hospitals Name</h1>
+    
+  <section >
+    <ul class="list-group text-center text-capitalize" style="font-size:32px">   <!-- Link to every section in the page -->
+      <a href="#section1">Ibn Sina Hospital Sylhet Ltd. Sylhet</a><br>
+     <a href="#section2">Sylhet M.A.G. Osmani Medical College Hospital</a><br>
+     <a href="#section3">Jalalabad Ragib-Rabeya Medical College</a><br>
+      <a href="#section4">Sylhet Women's Medical College Hospital</a><br>
+     <a href="#section5">Sylhet Diabetic Hospital</a><br>
+    </ul>
+
+  </section>
+
+  <section id="section1">
+    <h2>Ibn Sina Hospital Sylhet Ltd. Sylhet</h2>
+    <p>Address: Subhani Ghat Point, Sylhet<br><br>
+Hours: Open 24 hours<br>
+Phone: 01938-865257<br></p>
+</section>
+
+  <section id="section2">
+    <h2>Sylhet M.A.G. Osmani Medical College Hospital
+</h2>
+    <p>Address: Medical College Rd, Sylhet<br><br>
+Hours: Open 24 hours<br>
+Phone: 0821-713667<BR></p></section>
+  <section id="section3">
+    <h2>Jalalabad Ragib-Rabeya Medical College & Hospital</h2>
+    <p>Jalalabad Ragib-Rabeya Medical College is a private medical school in Bangladesh, established in 1995. It is located in the Pathantula area of Bimanbandar Thana, in Sylhet. <br><br>
+Address: 29/5 Pathantola Rd, Sylhet<br><br>
+Hours: Open 24 hours<br>
+Phone: 0821-719090<br>
+Principal: Prof. Abed Hossain<br>
+Founded: 1995<br>
+Number of students: 700<br>
+Chairperson: Ragib Ali<br>
+Academic staff: 290 (2015)<br>
+Academic affiliation: Shahjalal University of Science and Technology (SUST)<br>
+<BR></p>
+  </section>
+  <section id="section4">
+    <h2>Sylhet Women's Medical College Hospital</h2>
+    <p>Sylhet Women's Medical College is a low budget private medical school in Bangladesh, exclusively for female students, established in 2005. It is located in Mirboxtola, in central Sylhet.<br><br>
+Address: Noyashorok Road, Sylhet<br><br>
+Hours: Open 24 hours<br>
+Phone: 0821-720222</p>
+  </section>
+  <div>
+    <h2><a name="section5">Sylhet Diabetic Hospital</a></h2>
+    <p>Address: Puranlane Road, Sylhet<br><br>
+Hours: <br><br>
+Friday	8AM–6PM<br>
+Saturday	8AM–6PM<br>
+Sunday	8AM–6PM<br>
+Monday	8AM–6PM<br>
+Tuesday	8AM–6PM<br>
+Wednesday	8AM–6PM<br>
+Thursday	8AM–6PM<br><br>
+
+Phone: 0821-713632<BR/>    </p>
+  </div>
+<div class="container ">
+<ul class="pager font-weight-bold text-monospace">
+    <li class="center "><a href="#top">Back to Top</a></li>
+   <li class="center "><a href="../index.php">Back To Home Page</a></li>
+</ul></div>
+  
+    <h2  class="text-center">You can view location in google map</h2>
+    <div id="map"></div>
+    <script>
+
+      function initMap() {
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 10,
+          center: {lat:24.763589, lng:91.822501}
+        });
+
+        // Create an array of alphabetical characters used to label the markers.
+        var labels =['Ibn Sina Hospital Sylhet Ltd. Sylhet',
+	  'Sylhet M.A.G. Osmani Medical College Hospital',
+	  'Jalalabad Ragib-Rabeya Medical College',
+	  'Sylhet Womens Medical College Hospital',
+	  'Sylhet Diabetic Hospital'];
+
+        // Add some markers to the map.
+        // Note: The code uses the JavaScript Array.prototype.map() method to
+        // create an array of markers based on a given "locations" array.
+        // The map() method here has nothing to do with the Google Maps API.
+        var markers = locations.map(function(location, i) {
+          return new google.maps.Marker({
+            position: location,
+            label: labels[i % labels.length]
+          });
+        });
+
+        // Add a marker clusterer to manage the markers.
+        var markerCluster = new MarkerClusterer(map, markers,
+            {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
+      }
+      var locations = [
+        {lat:24.891655, lng:91.877532},
+        {lat:24.900119, lng:91.853098},
+        {lat:24.913388, lng:91.852401},
+        {lat:24.898546, lng:91.872538},
+        {lat:24.893313, lng:91.871046}
+      ]
+
+
+    </script>
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=">
+    </script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+              
+  </body>
+</html>

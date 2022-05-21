@@ -1,0 +1,39 @@
+/* ===== ESTILOS DE CITAS ===== */
+/* Nota: todos los estilos las subcategorias tendran el siguiente formato: .citas-x o #citas-x */
+#citas-contenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;   
+}
+
+.table {
+    width: 80%;
+}
+
+.citas-anular {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.citas-anular button {
+    font-size: 1.3em;
+}
+
+.citas-select {
+    width: 50%;
+}
+
+.modal-body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+label[for=hora] {
+    width: 100%;
+}
+
+.citas-modal {
+    padding: 1em;
+}

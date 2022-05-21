@@ -1,0 +1,125 @@
+/*===== ESTILOS GENERALES DEL PANEL =====*/
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #f6f6f6;
+}
+
+#menu {
+    height: 100%;
+    flex-basis: 15%;
+    box-shadow: 21px 0px 10px -21px rgba(0, 0, 0, 0.30);
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+#pagina {
+    flex-basis: 83%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#header {
+    height: 5%;
+    width: 53%;
+    box-shadow: 0px 10px 15px -15px rgba(0, 0, 0, 0.75);
+    display: flex;
+    background-color: white;
+    align-items: center;
+}
+
+.headerItem {
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#reloj {
+    flex-basis: 50%;
+}
+
+#logout {
+    flex-basis: 10%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#notificaciones-text {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+#logout p {
+    padding-left: 0.5em;
+    margin: 0;
+}
+
+.badge {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+#inicio-contenido, #citas-contenido, #informes-contenido, #misdatos-contenido, #tratamientos-contenido {
+    height: 85%;
+    width: 95%;
+    align-self: auto;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.30);
+    border-radius: 5px;
+    background-color: white;
+}
+
+.hover {
+    cursor: pointer;
+}
+
+#perfil {
+    width: 100%;
+    height: 35%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#imgperfil img {
+    width: 50%;
+    border-radius: 50%;
+    margin: 2em;
+}
+
+#secciones {
+    width: 100%;
+    justify-self: flex-start;
+    height: 65%;
+}
+
+.separador {
+    border-top: 1px solid gray;
+    width: 90%;
+}
+
+.separador-v {
+    border-right: 1px solid gray;
+    height: 80%;
+}
+
+.list-group-item {
+    border-radius: 0px !important;
+    border-bottom: 0;
+}
+
+.last {
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}

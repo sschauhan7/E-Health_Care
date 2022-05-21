@@ -1,0 +1,13 @@
+@media only screen and (max-width: 1650px) {
+    /*Cambiamos el width de la barra de informacion superior*/
+    #header {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 1260px) {
+    /*Cambiamos el width de la barra de informacion superior*/
+    #header {
+        width: 100%;
+    }
+}

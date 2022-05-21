@@ -1,0 +1,24 @@
+#tratamientos-contenido {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.table {
+    width: 80%;
+}
+
+.li-modal {
+    list-style-type: none;
+}
+
+.ul-modal {
+    padding: 0;
+}
+
+h3 {
+    width: 100%;
+    text-align: center;
+    margin-top: 2em;
+}

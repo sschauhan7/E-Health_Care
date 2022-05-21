@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Location of Rajshahi Hospital</title>
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html	p{background-position:left;
+	font-family:"Times New Roman", Times, serif;
+	font-size:20px;
+	color:#FFFFFF;
+	
+	text-align:center;
+	}
+	h2{font-style:italic;
+	font-size:36px;
+	color:#FFFF99;
+	text-align:center;
+	}
+    </style>
+        <style>
+h1{
+font-size:50px;
+color:#FFFFFF;
+padding-top:60px;
+}
+img 
+{ float: left;
+width: 77px;
+}
+
+body {margin:0;
+padding:0;
+font-family:"Bahnschrift Light", "Bernard MT Condensed", "Berlin Sans FB Demi", "Bell MT";
+width:100%;
+height:100vh;
+background-color:#333333;
+}
+</style>
+  </head>
+  <body>
+    <h1 class=" text-capitalize text-center "id="top"style="background-color:#666666">Hospitals Name</h1>
+    
+  <section >
+    <ul class="list-group text-center text-capitalize " style="font-size:32px">
+      <!-- Link to every section in the page -->
+      <li><a href="#section1">Rajshahi Medical College & Hospital</a></li>
+      <li><a href="#section2">Islami Bank Hospital Rajshahi</a></li>
+      <li><a href="#section3">Rajshahi Cancer Hospital and Research Center Trust</a></li>
+      <li><a href="#section4">Barind Medical College & Hospital</a></li>
+      <li><a href="#section5">Makka Eye Hospital</a></li>
+    </ul>
+
+  </section>
+
+  <section id="section1">
+    <h2>Rajshahi Medical College & Hospital</h2>
+    <p>Rajshahi Medical College is a government medical school in Bangladesh, established in 1958. It is located in Rajshahi. It is affiliated with Rajshahi University.<br />
+Address: Rajshahi 6000<br />
+Hours: Open 24 hours<br />
+Phone: 0721-774335</p>
+</section>
+
+  <section id="section2">
+    <h2>Islami Bank Hospital Rajshahi</h2>
+    <p>Address: Medical Road, Rajshahi 6000<br />
+Hours: Open 24 hours<br />
+Phone: 01763-930101<BR></p></section>
+  <section id="section3">
+    <h2>Rajshahi Cancer Hospital and Research Center Trust</h2>
+    <p>Address: N6, Rajshahi<br />
+Hours: Open 24 hours<br />
+Phone: 0721-751289
+<BR></p>
+  </section>
+  <section id="section4">
+    <h2>Barind Medical College & Hospital</h2>
+    <p>Address: Padma Residential Area,, Rajshahi<br />
+Hours: Open 24 hours<br />
+Phone: 0721-761738</p>
+  </section>
+  <div>
+    <h2><a name="section5">Makka Eye Hospital</a></h2>
+    <p>Address: Charpara Rd, Mymensingh<br />
+Hours: Open 24 hours<BR/>
+    </p>
+  </div>  </div>
+<div class="container ">
+<ul class="pager font-weight-bold text-monospace">
+    <li class="center "><a href="#top">Back to Top</a></li>
+   <li class="center "><a href="../index.php">Back To Home Page</a></li>
+</ul></div>
+    <h2 >You can view location in google map</h2>
+    <div id="map"></div>
+    <script>
+
+      function initMap() {
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 10,
+          center: {lat:24.363589, lng:88.640328}
+        });
+
+        // Create an array of alphabetical characters used to label the markers.
+        var labels =['Rajshahi Medical College & Hospital',
+	  'Islami Bank Hospital Rajshahi',
+	  'Rajshahi Cancer Hospital and Research Center Trust',
+	  'Barind Medical College & Hospital',
+	  'Makka Eye Hospital'];
+
+        // Add some markers to the map.
+        // Note: The code uses the JavaScript Array.prototype.map() method to
+        // create an array of markers based on a given "locations" array.
+        // The map() method here has nothing to do with the Google Maps API.
+        var markers = locations.map(function(location, i) {
+          return new google.maps.Marker({
+            position: location,
+            label: labels[i % labels.length]
+          });
+        });
+
+        // Add a marker clusterer to manage the markers.
+        var markerCluster = new MarkerClusterer(map, markers,
+            {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
+      }
+      var locations = [
+        {lat:24.371725, lng:88.583045},
+        {lat:24.371725, lng:88.583045},
+        {lat:24.366132, lng:88.664789},
+        {lat:24.382302, lng:88.623917},
+        {lat:24.362752, lng:88.605695}
+      ]
+
+    </script>
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=">
+    </script>
+  </body>
+</html>
